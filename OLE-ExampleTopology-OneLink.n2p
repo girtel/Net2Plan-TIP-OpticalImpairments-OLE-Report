@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<network description="Fictitious mesh network connecting the seven most populated cities in Spain. It is composed of 7 nodes and 16 unidirectional links, including a demand set" name="7-node network" version="5" nextElementId="3724">
+	<node id="3" xCoord="0.0" yCoord="0.0" name="A" population="0.0" isUp="true" layersWithIconsDefined="">
+		<attribute key="level" value="1"/>
+		<attribute key="population" value="1615448"/>
+	</node>
+	<node id="5" xCoord="5.0" yCoord="0.0" name="B" population="0.0" isUp="true" layersWithIconsDefined="">
+		<attribute key="level" value="1"/>
+		<attribute key="population" value="703021"/>
+	</node>
+	<layer id="1" name="WDM" description="" isDefaultLayer="true" linkCapacityUnitsName="" demandTrafficUnitsName="">
+		<link id="3723" originNodeId="3" destinationNodeId="5" capacity="100.0" lengthInKm="2000.0" bidirectionalPairId="-1" propagationSpeedInKmPerSecond="100.0" isUp="true">
+			<attribute key="edfaGains_dB" value="20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0 20.0"/>
+			<attribute key="edfaNoiseFigures_dB" value="5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5"/>
+			<attribute key="edfaPositions_km" value="100.0 200.0 300.0 400.0 500.0 600.0 700.0 800.0 900.0 1000.0 1100.0 1200.0 1300.0 1400.0 1500.0 1600.0 1700.0 1800.0 1900.0 2000.0"/>
+			<attribute key="pcLosses_dB" value="0.5 0.5"/>
+			<attribute key="pcPositions_km" value="0.0 1000.0"/>
+		</link>
+		<sourceRouting>
+		</sourceRouting>
+	</layer>
+	<layer id="285" name="IP" description="" isDefaultLayer="false" linkCapacityUnitsName="" demandTrafficUnitsName="">
+		<demand id="474" ingressNodeId="3" egressNodeId="5" offeredTraffic="4.336563604440378" intendedRecoveryType="UNKNOWNTYPE" bidirectionalPairId="-1">
+			<attribute key="traf1" value="8.18062424538816"/>
+			<attribute key="traf2" value="7.866292227120379"/>
+			<attribute key="traf3" value="4.336563604440378"/>
+		</demand>
+		<demand id="485" ingressNodeId="5" egressNodeId="3" offeredTraffic="11.190303703013896" intendedRecoveryType="UNKNOWNTYPE" bidirectionalPairId="-1">
+			<attribute key="traf1" value="11.311708211536308"/>
+			<attribute key="traf2" value="13.929338970484586"/>
+			<attribute key="traf3" value="11.190303703013896"/>
+		</demand>
+		<hopByHopRouting>
+		</hopByHopRouting>
+	</layer>
+</network>
