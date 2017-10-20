@@ -9,5 +9,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 	- Credits to OLE and Politecnico di Torino in the HTML Report.
 	
 ### Fixed
-	- Solved a problem when reading input files if the number of channels was small.
+	- Solved a problem when reading output files if the number of channels was small.
 	- Units of Power per channel are now in mW as it is said.
